@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Product Manager</h1>
+    <form action="" id="productForm">
+        <input type="text" id="productName" placeholder="Product Name">
+        <input type="number" id="productPrice" placeholder="ProductPrice">
+        <input type="text" id="productCategory" placeholder="Category">
+        <button type="submit">Add Product</button>
+    </form>
+
+    <br>
+
+    <input type="text" id="searchInput" placeholder="Search Product">
+    <input type="number" id="maxPrice" placeholder="Maximum price">
+    <select name="" id="categoryFilter">
+        <!-- <option value="">All categories</option>
+        <option value="Electronics">Electroincs</option>
+        <option value="Furniture">Furniture</option>
+        <option value="Clothing">Clothing</option> -->
+    </select>
+    <select id="sortProducts">
+        <option value="">Sort By</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+        <option value="name-az">Name: A to Z</option>
+        <option value="name-za">Name: Z to A</option>
+    </select>
+    <button id="resetFilters">Reset Filters</button>
+
+    <h4 id="productStats"></h4>
+
+    <br>
+
+    <h3 id="productCount"></h3>
+
+    <p id="error"></p>
+
+    <div id="productList"></div>
+
+
+
+    <script src="app.mjs"></script>
+</body>
+
+</html>
